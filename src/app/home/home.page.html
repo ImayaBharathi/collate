@@ -1,0 +1,59 @@
+<!-- <div id="container">
+  </div>-->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="appcolor">
+    <ion-title>CoLLAte</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button  menu="first"></ion-menu-button>
+    </ion-buttons>
+      <!-- <ion-icon  name="ellipsis-vertical-outline"></ion-icon> -->
+  </ion-toolbar>
+</ion-header>
+<super-tabs>
+  <super-tabs-toolbar slot="bottom" color="appcolor">
+    <super-tab-button>
+      <ion-icon name="home" color="light"></ion-icon>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="people" color="light"></ion-icon>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="radio" color="light"></ion-icon>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="help-buoy" color="light"></ion-icon>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-icon name="briefcase" color="light"></ion-icon>
+    </super-tab-button>
+  </super-tabs-toolbar>
+  <super-tabs-container>
+    <super-tab>
+      <ion-content >
+        <ion-nav [root]="landing_home" #landinghomeNav></ion-nav>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="government_people_blog" #governmentpeopleNav></ion-nav>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="ngo_people_blog" #ngopeopleNav></ion-nav>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="people_government_blog" #peoplegovernNav></ion-nav>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="people_ngo" #peoplengoNav></ion-nav>
+      </ion-content>
+    </super-tab>
+  </super-tabs-container>
+</super-tabs>
+
+

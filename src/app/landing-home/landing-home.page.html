@@ -1,0 +1,54 @@
+<ion-content padding>
+  <ion-card *ngFor="let article of people">
+  <ion-item>
+    <ion-chip>
+      <ion-avatar>
+        <img src="../../assets/icon/img_avatar.png">
+      </ion-avatar>
+      <ion-label>{{article.name}}</ion-label>
+
+    </ion-chip>
+<ion-label></ion-label>
+    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+  </ion-item>
+  <a style="text-decoration:none;color: black;"  href="" class="item item-avatar-left">
+  <ion-card-header>
+    
+
+    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    <ion-card-title>{{article.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{article.description}}
+  </ion-card-content>
+</a>
+<ion-item>
+<ion-icon name="heart-outline" color="dark"></ion-icon>
+<ion-card-subtitle>
+  <ion-badge color="tertiary">
+    {{article.like}}
+  </ion-badge>
+</ion-card-subtitle>
+<ion-label></ion-label>
+
+<ion-icon name="chatbox-outline" color="dark"></ion-icon>
+<ion-card-subtitle>
+  <ion-badge color="medium">
+    {{article.like}}
+  </ion-badge>
+</ion-card-subtitle>
+<ion-label></ion-label>
+
+<ion-icon name="share-social-outline" color="dark"></ion-icon>
+<ion-card-subtitle>
+  <ion-badge color="success">
+    {{article.like}}
+  </ion-badge>
+</ion-card-subtitle>
+<ion-label></ion-label>
+<ion-icon name="bookmark-outline" color="dark"></ion-icon>
+</ion-item>
+</ion-card>
+
+</ion-content>
+

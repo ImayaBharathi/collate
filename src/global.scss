@@ -1,0 +1,52 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// variables.scss
+:root {
+    --st-base-color-inactive: rgba(255, 255, 255, 0.3);
+    --st-base-color-active: rgba(255, 255, 255, 7);
+  }
+
+  :root {
+    --ion-color-appcolor: #000000;
+    --ion-color-appcolor-rgb: 0,0,0;
+    --ion-color-appcolor-contrast: #ffffff;
+    --ion-color-appcolor-contrast-rgb: 255,255,255;
+    --ion-color-appcolor-shade: #000000;
+    --ion-color-appcolor-tint: #1a1a1a;
+  }
+  
+  .ion-color-appcolor {
+    --ion-color-base: var(--ion-color-appcolor);
+    --ion-color-base-rgb: var(--ion-color-appcolor-rgb);
+    --ion-color-contrast: var(--ion-color-appcolor-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-appcolor-contrast-rgb);
+    --ion-color-shade: var(--ion-color-appcolor-shade);
+    --ion-color-tint: var(--ion-color-appcolor-tint);
+  }
+  
+  
